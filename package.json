@@ -1,0 +1,22 @@
+{
+  "name": "musicplayer",
+  "version": "1.0.0",
+  "description": "\"# electron-musicplayer\"",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shishirmax/electron-musicplayer.git"
+  },
+  "author": "Shishir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shishirmax/electron-musicplayer/issues"
+  },
+  "homepage": "https://github.com/shishirmax/electron-musicplayer#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13"
+  }
+}

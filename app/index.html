@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <title>Music Player</title>
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <body ng-app="Player">
+        <div class="container-fluid maxHeight">
+            <div class="maxHeight" ng-view></div>
+        </div>
+    </body>
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./bower_components/howler.js/dist/howler.min.js"></script>
+
+    <script src="views/player/player.js"></script>
+    <script src="app.js"></script>
+</html>
