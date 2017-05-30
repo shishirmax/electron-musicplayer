@@ -23,17 +23,19 @@
                  name:$scope.songList[i]
              })
          }
-         console.log(songsArrayForPlaying);
-
-        //  $scope.song = new Howl({
-        //      src:[arg]
-        //  });
          $scope.player = new Player(songsArrayForPlaying);
          $scope.musicSelected = true;
          $scope.$apply();
      })
      $scope.playMusic = function(){
-        $scope.player.play();
+         if($scope.songPlaying){
+             $scope.songPlaying = false;
+             $scope.player.pause();
+         }
+         else{
+             $scope.songPlaying = true;
+             $scope.player.play();
+         }
      }
      var Player = function(playlist){
          this.playlist = playlist;

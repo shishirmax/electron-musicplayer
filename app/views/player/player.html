@@ -1,5 +1,13 @@
 <div class="row maxHeight">
     <div class="col-md-12 maxHeight">
-        <div class="btn" ng-show="musicSelected" ng-click="playMusic()">Play</div>
+        <div class="controlsOuter">
+            <div class="controlsInner">
+                <div id="loading"></div>
+                <div class="btn"  id="playBtn" ng-show="!songPlaying" ng-click="playMusic()"></div>
+                <div class="btn"  id="pauseBtn" ng-show="!songPlaying" ng-click="playMusic()"></div>
+            </div>
+        </div>
+        <div id="bar" ng-hide="songPlaying"></div>
+        <div id="progress"></div>
     </div>
 </div>
